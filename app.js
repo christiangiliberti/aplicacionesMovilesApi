@@ -7,12 +7,12 @@ var options ={
 }
 
 
-function obtenerCita(){
+function obtenerMuerte(){
     return request(options);
 }
 
 
-obtenerCita().then(objeto=>{
+obtenerMuerte().then(objeto=>{
     console.log("Muerte: "+ objeto[0].death);
     console.log("Causa: "+ objeto[0].cause);
     console.log("Responsable :"+ objeto[0].responsible);
