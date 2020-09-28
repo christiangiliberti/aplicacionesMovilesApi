@@ -2,7 +2,7 @@ const https = require("https");
 
 var url = "https://www.breakingbadapi.com/api/quote/random?author=Skyler+White";
 
-function obtenerChiste(callback){
+function obtenerCita(callback){
 
     https.get(url, (resp) => {
 
@@ -30,4 +30,4 @@ function callback(objeto) {
     console.log("Serie: " + objeto[0].series);
 }
 
-obtenerChiste(callback);
+obtenerCita(callback);
