@@ -1,6 +1,6 @@
 const https = require("https");
 
-var uri "https://www.breakingbadapi.com/api/character/random";
+var url = "https://www.breakingbadapi.com/api/character/random";
 
 
 function obtenerCita(callback){
@@ -24,6 +24,7 @@ function obtenerCita(callback){
 }
 
 function callback(objeto) {
+    
     console.log("ID: " + objeto[0].char_id);
     console.log("Nombre: " + objeto[0].name);
     console.log("Cumpleaños: " + objeto[0].birthday);
@@ -32,6 +33,7 @@ function callback(objeto) {
     console.log("Temporadas en la que aparece: " + objeto[0].appearance);
     console.log("Protagonizado: " + objeto[0].portrayed);
     console.log("Serie: " + objeto[0].category);
+    
 }
 
 obtenerCita(callback);
