@@ -2,7 +2,7 @@
 const request = require("request-promise");
 
 var options ={
-    url:"https://breakingbadapi.com/api/random-death",
+    uri:"https://breakingbadapi.com/api/random-death",
     json:true
 }
 

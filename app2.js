@@ -1,6 +1,6 @@
 const https = require("https");
 
-var url = "https://www.breakingbadapi.com/api/character/random";
+var uri "https://www.breakingbadapi.com/api/character/random";
 
 
 function obtenerCita(callback){
