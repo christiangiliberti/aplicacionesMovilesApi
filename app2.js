@@ -28,7 +28,7 @@ function callback(objeto) {
     console.log("Cumpleaños: " + objeto[0].birthday);
     console.log("Estado: " + objeto[0].status);
     console.log("Sobrenombre: " + objeto[0].nickname);
-    console.log("Tamporadas en la que aparece: " + objeto[0].appearance);
+    console.log("Temporadas en la que aparece: " + objeto[0].appearance);
     console.log("Protagonizado: " + objeto[0].portrayed);
     console.log("Serie: " + objeto[0].category);
 }
