@@ -6,13 +6,12 @@ var options ={
     json:true
 }
 
-
 function obtenerMuerte(){
     return request(options);
 }
 
-
 obtenerMuerte().then(objeto=>{
+    console.log("ID: "+ objeto.death_id);
     console.log("El muerto es: "+ objeto.death);
     console.log("Causa: "+ objeto.cause);
     console.log("Responsable: "+ objeto.responsible);
