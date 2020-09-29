@@ -1,8 +1,8 @@
+
 const request = require("request-promise");
 
 var options ={
-    url:"https://breakingbadapi.com/api/deaths",
-    //https://breakingbadapi.com/api/random-death en este link no me funciona porque???
+    url:"https://breakingbadapi.com/api/random-death",
     json:true
 }
 
@@ -13,20 +13,20 @@ function obtenerMuerte(){
 
 
 obtenerMuerte().then(objeto=>{
-    console.log("Muerte: "+ objeto[0].death);
-    console.log("Causa: "+ objeto[0].cause);
-    console.log("Responsable :"+ objeto[0].responsible);
-    console.log("Ultimas palabras: "+ objeto[0].last_words); 
-    console.log("Temporada: "+ objeto[0].season + " Capitulo: " + objeto[0].episode); 
+    console.log("El muerto es: "+ objeto.death);
+    console.log("Causa: "+ objeto.cause);
+    console.log("Responsable: "+ objeto.responsible);
+    console.log("Ultimas palabras: "+ objeto.last_words); 
+    console.log("Temporada: "+ objeto.season + " Capitulo: " + objeto.episode);
+    console.log("Ocupacion: "+ objeto.occupation);
+    console.log("Sobrenombre: "+ objeto.nickname);
 });
-
-
 
 /*
 const request = require("request-promise");
 
 var options ={
-    url:"https://www.breakingbadapi.com/api/quote/random?author=Skyler+White",
+    url:"https://www.breakingbadapi.com/api/quote/random",
     json:true
 }
 
