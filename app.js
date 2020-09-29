@@ -20,25 +20,3 @@ obtenerMuerte().then(objeto=>{
     console.log("Ocupacion: "+ objeto.occupation);
     console.log("Sobrenombre: "+ objeto.nickname);
 });
-
-/*
-const request = require("request-promise");
-
-var options ={
-    url:"https://www.breakingbadapi.com/api/quote/random",
-    json:true
-}
-
-
-function obtenerCita(){
-    return request(options);
-}
-
-
-obtenerCita().then(objeto=>{
-    console.log("ID: " + objeto[0].quote_id);
-    console.log("Cita: " + objeto[0].quote);
-    console.log("Autor: " + objeto[0].author);
-    console.log("Serie: " + objeto[0].series);
-});
-*/
