@@ -3,7 +3,7 @@ const https = require("https");
 var url = "https://www.breakingbadapi.com/api/character/random";
 
 
-function obtenerCita(callback){
+function obtenerPersonaje(callback){
 
     https.get(url, (resp) => {
 
@@ -38,4 +38,4 @@ function callback(objeto) {
     
 }
 
-obtenerCita(callback);
+obtenerPersonaje(callback);
